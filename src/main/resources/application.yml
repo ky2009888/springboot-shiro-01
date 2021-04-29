@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: springboot-shiro-01
+  datasource:
+    username: root
+    password: jliang83
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/shiro_db?useSSL=false
+  aop:
+    auto: true
+    proxy-target-class: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: UTF-8
+    suffix: .html
+    mode: HTML5
+  resources:
+    static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/, classpath:/templates
+server:
+  port: 8080

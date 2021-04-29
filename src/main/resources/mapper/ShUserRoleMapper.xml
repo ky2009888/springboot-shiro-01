@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ky2009666.service.mapper.ShUserRoleMapper">
+
+    <resultMap id="BaseResultMap" type="com.ky2009666.service.domain.ShUserRole">
+            <id property="id" column="ID" jdbcType="VARCHAR"/>
+            <result property="enableFlag" column="ENABLE_FLAG" jdbcType="VARCHAR"/>
+            <result property="userId" column="USER_ID" jdbcType="VARCHAR"/>
+            <result property="roleId" column="ROLE_ID" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,ENABLE_FLAG,USER_ID,
+        ROLE_ID
+    </sql>
+</mapper>

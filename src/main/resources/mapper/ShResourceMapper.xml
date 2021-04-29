@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ky2009666.service.mapper.ShResourceMapper">
+
+    <resultMap id="BaseResultMap" type="com.ky2009666.service.domain.ShResource">
+            <id property="id" column="ID" jdbcType="VARCHAR"/>
+            <result property="parentId" column="PARENT_ID" jdbcType="VARCHAR"/>
+            <result property="resourceName" column="RESOURCE_NAME" jdbcType="VARCHAR"/>
+            <result property="requestPath" column="REQUEST_PATH" jdbcType="VARCHAR"/>
+            <result property="label" column="LABEL" jdbcType="VARCHAR"/>
+            <result property="icon" column="ICON" jdbcType="VARCHAR"/>
+            <result property="isLeaf" column="IS_LEAF" jdbcType="VARCHAR"/>
+            <result property="resourceType" column="RESOURCE_TYPE" jdbcType="VARCHAR"/>
+            <result property="sortNo" column="SORT_NO" jdbcType="INTEGER"/>
+            <result property="description" column="DESCRIPTION" jdbcType="VARCHAR"/>
+            <result property="systemCode" column="SYSTEM_CODE" jdbcType="VARCHAR"/>
+            <result property="isSystemRoot" column="IS_SYSTEM_ROOT" jdbcType="VARCHAR"/>
+            <result property="enableFlag" column="ENABLE_FLAG" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,PARENT_ID,RESOURCE_NAME,
+        REQUEST_PATH,LABEL,ICON,
+        IS_LEAF,RESOURCE_TYPE,SORT_NO,
+        DESCRIPTION,SYSTEM_CODE,IS_SYSTEM_ROOT,
+        ENABLE_FLAG
+    </sql>
+</mapper>
